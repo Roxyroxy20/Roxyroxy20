@@ -1,0 +1,98 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  // This widget is the root of your application.
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        body: Container(
+            height: 400,
+            width: 500,
+            color: Colors.pink,
+            child: Row(
+              children: [
+                Container(
+                    height: 400,
+                    width: 200,
+                    color: Colors.black,
+                    child: Column(
+                      children: [
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: const Color.fromARGB(255, 58, 20, 17),
+                        ),
+                        Container(
+                          height: 200,
+                          width: 200,
+                          color: Colors.red,
+                        ),
+                      ],
+                    )),
+                Container(
+                    height: 400,
+                    width: 300,
+                    color: Colors.green,
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            Container(
+                              height: 150,
+                              width: 150,
+                              color: Colors.red,
+                            ),
+                            Container(
+                              height: 150,
+                              width: 150,
+                              color: Color.fromARGB(255, 69, 194, 106),
+                            )
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              height: 200,
+                              width: 200,
+                              color: Color.fromARGB(255, 241, 122, 196),
+                            ),
+                            Column(
+                              children: [
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  color: Color.fromARGB(255, 136, 63, 97),
+                                ),
+                                Container(
+                                  height: 100,
+                                  width: 100,
+                                  color: Colors.red,
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Container(
+                              height: 50,
+                              width: 300,
+                              color: const Color.fromARGB(255, 15, 5, 4),
+                            )
+                          ],
+                        ),
+                      ],
+                    )),
+              ],
+            )),
+      ),
+    );
+  }
+}
